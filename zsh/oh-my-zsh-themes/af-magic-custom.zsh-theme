@@ -1,5 +1,7 @@
 # af-magic.zsh-theme
 #
+# Modified by: Jiang Jun
+#
 # Author: Andy Fleming
 # URL: http://andyfleming.com/
 # Repo: https://github.com/andyfleming/oh-my-zsh
