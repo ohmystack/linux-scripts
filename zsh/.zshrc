@@ -49,5 +49,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 autoload -U compinit && compinit
-#export TERM=screen-256color
+export TERM='xterm-256color'
 #eval `dircolors /home/stack/.dircolors`
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
