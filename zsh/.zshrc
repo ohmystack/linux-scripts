@@ -50,6 +50,6 @@ export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/s
 
 autoload -U compinit && compinit
 export TERM='xterm-256color'
-#eval `dircolors /home/stack/.dircolors`
+eval `dircolors ~/.dircolors`
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
