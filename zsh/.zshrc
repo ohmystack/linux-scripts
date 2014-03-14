@@ -53,3 +53,4 @@ export TERM='xterm-256color'
 eval `dircolors ~/.dircolors`
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}' # Doctorjs
