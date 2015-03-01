@@ -914,3 +914,6 @@ bindkey ^[[24~ next
 #unsetenv SSH_AUTH_SOCK
 #setenv SSH_AUTH_SOCK "$HOME/tmp/ssh-auth-sock"
 
+defutf8 on
+defencoding utf-8
+encoding utf-8 utf-8
