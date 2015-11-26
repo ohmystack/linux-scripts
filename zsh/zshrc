@@ -57,6 +57,9 @@ fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}' # Doctorjs
 
+# Golang
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
