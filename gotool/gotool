@@ -10,16 +10,18 @@ usage() {
   echo 'Usage: source gotool [a|activate] [d|deactivate|exit]'
 }
 
-need_source() {
-  echo '** Should run after "source" **'
-  echo 'Usage: source gotool [a|activate] [d|deactivate|exit]'
-  exit 1
-}
-
 # Check whether this script is being sourced
 if [ "$_" = "$0" ]; then
-  need_source
+  SOURCED=false
 fi
+
+check_sourced() {
+  if [ "$SOURCED" = false ] ; then
+    echo '** Should run after "source" **'
+    echo 'Usage: source gotool [a|activate] [d|deactivate|exit]'
+    exit 1
+  fi
+}
 
 save_old() {
   if [ -z "${_OLD_GOLANG_PATH}" ]; then
@@ -34,6 +36,7 @@ save_old() {
 }
 
 activate() {
+  check_sourced
   work_dir=$(pwd)
   if [ -d "$work_dir/src" ]; then
     save_old
@@ -52,6 +55,7 @@ activate() {
 }
 
 deactivate() {
+  check_sourced
   if [ -n "${_OLD_GOLANG_PATH}" ]; then
     export PATH=$_OLD_GOLANG_PATH
   fi
