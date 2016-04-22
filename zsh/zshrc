@@ -63,3 +63,5 @@ NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}' # Doctorjs
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+
+[[ -s "/home/stack/.gvm/scripts/gvm" ]] && source "/home/stack/.gvm/scripts/gvm"
