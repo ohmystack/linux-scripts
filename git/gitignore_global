@@ -12,3 +12,4 @@
 
 # Tools files
 tags
+*.egg-info
