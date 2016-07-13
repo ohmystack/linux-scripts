@@ -1,0 +1,12 @@
+[user]
+	name = ohmystack
+	email = jiangjun1990@gmail.com
+[core]
+	editor = /usr/bin/vim
+	excludesfile = ~/.gitignore_global
+	autocrlf = false
+[color]
+	ui = true
+; [http]
+  ; proxy = http://10.0.2.2:8118
+  ; sslVerify = false
