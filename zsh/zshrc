@@ -62,8 +62,8 @@ if [[ -d "~/.dircolors" && ! -L "~/.dircolors" ]] ; then
   eval `dircolors ~/.dircolors`
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}' # Doctorjs
+# Ruby
+[ -s "$HOME/.rvm" ] && . "$HOME/.rvm/scripts/rvm"
 
 # Golang
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
