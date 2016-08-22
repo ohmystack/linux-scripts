@@ -58,18 +58,13 @@ if [[ -d "~/.dircolors" && ! -L "~/.dircolors" ]] ; then
   eval `dircolors ~/.dircolors`
 fi
 
-# Ruby
-[ -s "$HOME/.rvm" ] && . "$HOME/.rvm/scripts/rvm"
-
-# Golang
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+# Ruby
+[ -s "$HOME/.rvm" ] && . "$HOME/.rvm/scripts/rvm"
 
-[[ -s "/home/stack/.gvm/scripts/gvm" ]] && source "/home/stack/.gvm/scripts/gvm"
-
+# Node
 export NVM_DIR="/home/stack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
