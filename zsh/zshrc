@@ -41,14 +41,10 @@ ZSH_THEME="af-magic-custom"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git, docker, docker-compose, screen, nvm, autojump)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git docker docker-compose screen nvm kubectl autojump)
 
 # Customize to your needs...
-export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-
-autoload -U compinit && compinit
+# export PATH=/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 # 256 color support
 if [ -n "$TMUX" ]; then
@@ -76,3 +72,5 @@ export LC_ALL="en_US.UTF-8"
 
 export NVM_DIR="/home/stack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source $ZSH/oh-my-zsh.sh
