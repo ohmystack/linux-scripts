@@ -68,4 +68,7 @@ export LC_ALL="en_US.UTF-8"
 export NVM_DIR="/home/stack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Golang
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 source $ZSH/oh-my-zsh.sh
