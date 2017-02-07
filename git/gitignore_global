@@ -13,3 +13,4 @@
 # Tools files
 tags
 *.egg-info
+*.pyc
