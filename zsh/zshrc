@@ -52,6 +52,11 @@ if [[ `uname` == 'Darwin' ]] ; then
   # If python are installed, include its bin path
   py_bin="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin"
   [ -d $py_bin ] && export PATH=$py_bin:$PATH
+  # CUDA
+  cuda_dir="/Developer/NVIDIA/CUDA-8.0"
+  [ -d $cuda_dir ] && \
+    export PATH="$cuda_dir/bin":$PATH && \
+    export DYLD_LIBRARY_PATH="$cuda_dir/lib"${DYLD_LIBRARY_PATH:+:${DYLD_LIBRARY_PATH}}
 fi
 
 # 256 color support
