@@ -44,7 +44,12 @@ ZSH_THEME="af-magic-custom"
 plugins=(git docker docker-compose screen nvm kubectl autojump)
 
 # Customize to your needs...
-# export PATH=/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
+
+# MacPorts
+if [[ `uname` == 'Darwin' ]] ; then
+  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+  export MANPATH=/opt/local/share/man:$MANPATH
+fi
 
 # 256 color support
 if [ -n "$TMUX" ]; then
