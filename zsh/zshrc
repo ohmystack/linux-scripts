@@ -45,11 +45,12 @@ plugins=(git docker docker-compose screen nvm kubectl autojump)
 
 # Customize to your needs...
 
-# MacPorts
+# OSX
 if [[ `uname` == 'Darwin' ]] ; then
+  # MacPorts
   export PATH=/opt/local/bin:/opt/local/sbin:$PATH
   export MANPATH=/opt/local/share/man:$MANPATH
-  # If python are installed, include its bin path
+  # Python (installed by MacPorts)
   py_bin="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin"
   [ -d $py_bin ] && export PATH=$py_bin:$PATH
   # CUDA
