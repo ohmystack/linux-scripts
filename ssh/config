@@ -1,0 +1,12 @@
+Host *
+  ServerAliveInterval 20
+  ServerAliveCountMax 3
+
+# Use proxy for GitHub
+Host github.com
+  ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
+
+# Host dev-node1
+#   HostName 127.0.0.1
+#   User xxx
+#   Port 15902
