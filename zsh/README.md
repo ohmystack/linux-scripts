@@ -1,3 +1,13 @@
+# zsh
+
+## Terminal settings
+-----------------
+
+- iTerm2 (macOS)
+
+Preferences > Profiles > Terminal > Report Terminal Type, set to "xterm-256color".
+
+
 ## Installation
 
 ```bash
