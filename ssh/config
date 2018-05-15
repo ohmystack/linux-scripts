@@ -3,7 +3,7 @@ Host *
   ServerAliveCountMax 3
 
 # Use proxy for GitHub
-Host github.com
+Host github.com go.googlecode.com golang.org
   ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
 
 # Host dev-node1
