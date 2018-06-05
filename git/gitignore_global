@@ -10,6 +10,15 @@
 .Spotlight-V100
 .Trashes
 
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+*.orig
+*.rej
+target
+
 # Tools files
 tags
 *.egg-info
