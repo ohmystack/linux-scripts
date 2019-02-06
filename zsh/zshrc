@@ -79,6 +79,9 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export EDITOR="vim"
 
+# Python
+command -v pyenv > /dev/null 2>&1 && eval "$(pyenv init -)"
+
 # Ruby
 [ -s "$HOME/.rvm" ] && . "$HOME/.rvm/scripts/rvm"
 
