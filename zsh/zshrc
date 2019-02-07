@@ -95,6 +95,12 @@ export NVM_DIR="$HOME/.nvm"
 # Java
 [[ -s "/usr/libexec/java_home" ]] && export JAVA_HOME=$(/usr/libexec/java_home)
 
+# Scala (install from https://www.scala-lang.org/download/)
+SCALA_DIR="/usr/local/share/scala"
+[[ -s $SCALA_DIR ]] && \
+	export SCALA_HOME=$SCALA_DIR/lib && \
+	export PATH=$PATH:$SCALA_DIR/bin
+
 source $ZSH/oh-my-zsh.sh
 
 # The next line updates PATH for the Google Cloud SDK.
