@@ -47,12 +47,6 @@ plugins=(git docker docker-compose screen nvm kubectl autojump)
 
 # OSX
 if [[ `uname` == 'Darwin' ]] ; then
-  # MacPorts
-  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-  export MANPATH=/opt/local/share/man:$MANPATH
-  # Python (installed by MacPorts)
-  py_bin="/opt/local/Library/Frameworks/Python.framework/Versions/Current/bin"
-  [ -d $py_bin ] && export PATH=$py_bin:$PATH
   # CUDA
   cuda_dir="/usr/local/cuda"
   [ -d $cuda_dir ] && \
