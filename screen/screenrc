@@ -557,7 +557,7 @@ hardstatus alwayslastline "%{= BW}%-Lw%{= WB}%50>%n%f* %t%{-}%+Lw%85= %{Wk} %M%d
 # bind Q only
 # bind S split
 # bind W width
-# bind X remove
+bind X remove
 # bind Z reset
 #
 # 040126 To be able to select windows with n > 9 ->
@@ -798,7 +798,7 @@ hardstatus alwayslastline "%{= BW}%-Lw%{= WB}%50>%n%f* %t%{-}%+Lw%85= %{Wk} %M%d
 # http://www.vim.org/ (which is just a mirror)
 #
 #      X - a fast way to lock the current screen.
-  bind X lockscreen
+# bind X lockscreen
 #
 # bind Y exec !!! echo -n http://www.math.fu-berlin.de/~guckes/
 # bind Y stuff http://www.math.fu-berlin.de/~guckes/
