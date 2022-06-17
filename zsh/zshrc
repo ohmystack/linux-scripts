@@ -75,6 +75,7 @@ export EDITOR="vim"
 
 # Homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
+export PATH="/opt/homebrew/bin":$PATH
 
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
