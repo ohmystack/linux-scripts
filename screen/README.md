@@ -1,8 +1,12 @@
 ---
 - Last Update: 2014.01.15
-- This Fork Author: JiangJun ( <jiangjun1990@gmail.com> )
+- This Fork Author: JiangJun ( <ohmystack@icloud.com> )
 
 ---
+
+Install
+-----------
+ln -sf $(pwd)/screenrc ${HOME}/.screenrc
 
 Description
 -----------
