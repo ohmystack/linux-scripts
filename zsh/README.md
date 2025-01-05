@@ -13,6 +13,9 @@ Preferences > Profiles > Terminal > Report Terminal Type, set to "xterm-256color
 ```bash
 cp themes/* ~/.oh-my-zsh/themes
 ln -sf $(pwd)/zshrc ${HOME}/.zshrc
+
+# For MacOS
+brew install autojump fzf the_silver_searcher
 ```
 
 ## Use theme
