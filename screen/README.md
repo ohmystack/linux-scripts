@@ -1,6 +1,5 @@
 # Screen Configuration `.screenrc`
 
-- Last Update: 2021.09.01
 - Author: <ohmystack@icloud.com>
 
 > The first version of .screenrc came from:
@@ -29,8 +28,13 @@ ln -sf $(pwd)/screenrc ${HOME}/.screenrc
 
 1. "Preferences - Profiles - Terminal", "Report terminal type" choose: xterm-256color
 2. Restart iTerm2
+3. (Optional) Select iterm2 colorscheme: [Oceanic-Next](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Oceanic-Next.itermcolors)
 
 ## Changelog
+
+### 2025-01-06
+
+* Support for screen 5
 
 ### 2021-09-01
 
