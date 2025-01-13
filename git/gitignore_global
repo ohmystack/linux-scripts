@@ -25,3 +25,4 @@ tags
 *.pyc
 .ccls-cache
 .ccls
+go.work
