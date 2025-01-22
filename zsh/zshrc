@@ -112,3 +112,6 @@ if [ -f "$HOME/Dev/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/De
 
 # fzf
 [ -x "$(command -v fzf)" ] && source <(fzf --zsh)
+
+# LM Studio CLI (lms)
+[[ -d "$HOME/.lmstudio/bin" ]] && export PATH="$PATH:$HOME/.lmstudio/bin"
