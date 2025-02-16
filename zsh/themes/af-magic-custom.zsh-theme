@@ -20,7 +20,7 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 # %c for current directory
 # its original purple is FG[105]
 PROMPT='$(git_prompt_info) \
-%B%{$fg[red]%}%(!.#.➜)%{$reset_color%}  \
+%B%{$fg[red]%}%(!.#.➜)%{$reset_color%} \
 %B$FG[032]%c  %b'
 
 PROMPT2='%B%{$fg[red]%}\ %{$reset_color%}%b'
@@ -32,7 +32,7 @@ eval my_gray='$FG[237]'
 eval my_orange='$FG[214]'
 
 # right prompt
-RPROMPT='%b$my_gray%n@%m%{$reset_color%}%'
+# RPROMPT='%b$my_gray%n@%m%{$reset_color%}%'
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]("
