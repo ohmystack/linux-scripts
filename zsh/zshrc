@@ -73,6 +73,11 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export EDITOR="vim"
 
+# zsh Plugins
+# zsh-syntax-highlighting
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'  # To have paths colored instead of underlined
+
 # Homebrew
 export HOMEBREW_NO_AUTO_UPDATE=1
 export PATH="/opt/homebrew/bin":$PATH
